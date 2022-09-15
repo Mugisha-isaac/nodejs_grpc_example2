@@ -33,6 +33,10 @@ message IsAuthenticatedRequest {
     string token = 1;
  }
 
+ message IsAuthenticatedRequest {
+    string token = 1;
+ }
+
 message IsAuthenticatedResponse {
  User user = 1;
  bool ok =1;
