@@ -1,1 +1,8 @@
 syntax = "proto3";
+
+service UserService {
+  rpc Create (CreateUserRequest) returns (CreateUserResponse);
+  rpc GetUser (GetUserRequest) returns (GetUserResponse);
+  rpc CreateToken (CreateTokenRequest) returns (CreateTokenResponse);
+  rpc IsAuthenticated (IsAuthenticatedRequest) returns (IsAuthenticatedResponse);
+}
