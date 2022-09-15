@@ -11,6 +11,10 @@ message CreateUserRequest {
    User user = 1;
 }
 
+message CreateUserResponse {
+   int32 id =1;
+}
+
 service UserService {
   rpc Create (CreateUserRequest) returns (CreateUserResponse);
   rpc GetUser (GetUserRequest) returns (GetUserResponse);
