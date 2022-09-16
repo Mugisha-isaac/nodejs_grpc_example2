@@ -15,3 +15,5 @@ const packageDefinition = protoLoader.loadSync(PROTO_PATH,{
 const user_proto = grpc.loadPackageDefinition(packageDefinition);
 
 startGrpcServer();
+
+const server = getGrpcServer();
