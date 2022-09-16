@@ -16,4 +16,6 @@ exports.startGrpcServer = function(){
         }
     )
 };
-exports.getGrpcServer = function(){};
+exports.getGrpcServer = function(){
+    return server;
+};
