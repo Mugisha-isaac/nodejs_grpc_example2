@@ -20,5 +20,5 @@ const server = getGrpcServer();
 
 
 server.addService(user_proto.UserService.service,{
-    // todo: add functions here
+    // todo: add functions here 
 });
