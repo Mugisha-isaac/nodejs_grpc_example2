@@ -17,3 +17,8 @@ const user_proto = grpc.loadPackageDefinition(packageDefinition);
 startGrpcServer();
 
 const server = getGrpcServer();
+
+
+server.addService(user_proto.UserService.service,{
+    // todo: add functions here
+});
